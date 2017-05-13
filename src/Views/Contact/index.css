@@ -1,0 +1,41 @@
+.contact__input {
+  position: relative;
+  width: 100%;
+  border: 1px solid #979797;
+  margin-bottom: -1px;
+  font-size: 2em;
+  padding: 3.5rem 3.2rem;
+  /* transition: 0.2s border-color ease-out; */
+}
+
+.contact__input:focus {
+  outline: none;
+  /* border-color: #D81717; */
+  /* z-index: 1; */
+}
+
+.contact__submit-container {
+  padding: 3rem 0;
+}
+
+.contact__text--title {
+  font-size: 3rem;
+  line-height: 4.6rem;
+  color: #444444;
+  font-weight: 300;
+  margin: 0;
+}
+
+.contact__text--subtitle {
+  font-size: 2rem;
+  line-height: 3.6rem;
+  margin: 0;
+}
+
+.contact--error {
+  color: #CC0000;
+}
+
+.contact--success {
+  color: #00CC00;
+}

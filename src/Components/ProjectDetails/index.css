@@ -1,0 +1,57 @@
+.project-details__type {
+  text-transform: uppercase;
+  color: #444444;
+  font-size: 1.75rem;
+  font-weight: 100;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+.project-details__segment-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+
+.project-details__title {
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.project-details__heading {
+  padding-top: 20rem;
+  padding-bottom: 8rem;
+}
+
+.project-details__description {
+  margin-top: 0;
+}
+
+.project-details__segment-text {
+  position: absolute;
+  top: 100%;
+}
+
+.project-details__segment-title,
+.project-details__segment-subtitle {
+  color: white;
+  margin: 3rem 0;
+}
+
+.project-details__segment-image {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  transition: all 0.3s linear;
+}
+
+.project-details__segment-video {
+  /* width: 30rem; */
+}

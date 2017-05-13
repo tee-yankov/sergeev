@@ -1,0 +1,73 @@
+.btn {
+  outline: none;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid #444444;
+  height: 4rem;
+  padding: 0 3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: 0.2s opacity ease-out;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: currentColor;
+  transition: 0.2s width ease-out;
+  z-index: -1;
+}
+
+.btn:hover:after {
+  width: 100%;
+}
+
+.btn__text {
+  position: relative;
+  color: currentColor;
+}
+
+.btn__overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  transition: 0.1s width ease-out;
+  transition-delay: 0.05s;
+  white-space: nowrap;
+}
+
+.btn:hover > .btn__text > .btn__overlay-text {
+  width: 100%;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+}
+
+.btn:disabled:hover {
+  cursor: not-allowed;
+}
+
+.btn:disabled:hover:after {
+  width: 0;
+}
+
+.btn:disabled:hover > .btn__text > .btn__overlay-text {
+  width: 0;
+}
+

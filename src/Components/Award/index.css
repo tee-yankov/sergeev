@@ -1,0 +1,23 @@
+.award {
+  flex-direction: column;
+  text-align: left;
+}
+
+.award__thumbnail-image {
+  width: 18rem;
+  height: 18rem;
+  background-size: cover;
+}
+
+.award__name {
+  margin: 0 0.2rem;
+}
+
+.award__description {
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  margin-top: 0;
+}
+
+.award__link {
+}

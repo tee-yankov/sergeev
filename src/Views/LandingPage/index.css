@@ -1,0 +1,15 @@
+.quote {
+  margin-bottom: 6rem;
+}
+
+.landing__bottom-text {
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.landing__bottom-text h1 {
+  margin-bottom: 5.6rem;
+}

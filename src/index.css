@@ -1,0 +1,184 @@
+@import '~normalize.css';
+@import '~flexboxgrid';
+
+/* BASE STUFF START */
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  font-size: 1rem;
+}
+
+h1, h2, h3, p, a, caption, button, span {
+  font-family: 'acumin-pro', sans-serif;
+  color: #444444;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-weight: 300;
+  line-height: 5.8rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 4.9rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 3.6rem;
+}
+
+a {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+button {
+  letter-spacing: 0.15rem;
+}
+
+iframe {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* BASE STUFF END */
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container-large {
+  width: 100%;
+  max-width: 160rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.quote {
+  width: 80%;
+  padding: 3rem 0 4rem 0;
+}
+
+.quote__author {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.9rem;
+  font-weight: 500;
+}
+
+.quote__body {
+  font-size: 3.6rem;
+  font-weight: 300;
+  line-height: 4.9rem;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.row--clear-margin {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.text--dark p,
+.text--dark h1 {
+  color: #000000;
+}
+
+/* HIDING THINGS IN FLEXBOXGRID */
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none !important;
+}
+@media (max-width: 48em) {
+    .visible-xs      { display: block !important; }
+    .row.visible-xs  { display: flex !important;
+                       display: -webkit-flex !important;
+                       display: -ms-flexbox !important;
+                       display: -webkit-box !important;
+                       display: flex!important; }
+    table.visible-xs { display: table !important; }
+    tr.visible-xs    { display: table-row !important; }
+    th.visible-xs,
+    td.visible-xs    { display: table-cell !important; }
+}
+@media (min-width: 48em) and (max-width: 62em) {
+    .visible-sm      { display: block !important; }
+    .row.visible-sm  { display: flex !important;
+                       display: -webkit-flex !important;
+                       display: -ms-flexbox !important;
+                       display: -webkit-box !important;
+                       display: flex!important; }
+    table.visible-sm { display: table !important; }
+    tr.visible-sm    { display: table-row !important; }
+    th.visible-sm,
+    td.visible-sm    { display: table-cell !important; }
+}
+@media (min-width: 62em) and (max-width: 75em) {
+    .visible-md      { display: block !important; }
+    .row.visible-md  { display: flex !important;
+                       display: -webkit-flex !important;
+                       display: -ms-flexbox !important;
+                       display: -webkit-box !important;
+                       display: flex!important; }
+    table.visible-md { display: table !important; }
+    tr.visible-md    { display: table-row !important; }
+    th.visible-md,
+    td.visible-md    { display: table-cell !important; }
+}
+@media (min-width: 75em) {
+    .visible-lg      { display: block !important; }
+    .row.visible-lg  { display: flex !important;
+                       display: -webkit-flex !important;
+                       display: -ms-flexbox !important;
+                       display: -webkit-box !important;
+                       display: flex!important; }
+    table.visible-lg { display: table !important; }
+    tr.visible-lg    { display: table-row !important; }
+    th.visible-lg,
+    td.visible-lg    { display: table-cell !important; }
+}
+@media (max-width: 48em)                       { .hidden-xs { display: none !important; } }
+@media (min-width: 48em) and (max-width: 62em) { .hidden-sm { display: none !important; } }
+@media (min-width: 62em) and (max-width: 75em) { .hidden-md { display: none !important; } }
+@media (min-width: 75em)                       { .hidden-lg { display: none !important; } }

@@ -1,0 +1,56 @@
+.navigation {
+  padding: 4.6rem 0;
+  background-color: transparent;
+  color: #444444;
+  fill: #444444;
+  width: 100%;
+  z-index: 5;
+}
+
+.navigation--inverted {
+  color: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+.navigation__list {
+  list-style: none;
+  height: 100%;
+}
+
+.navigation__logo-container svg g {
+  fill: inherit;
+}
+
+.navigation__link {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  letter-spacing: 2px;
+}
+
+.navigation__link::after {
+  content: '';
+  color: inherit;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: -0.65rem;
+  border-bottom: 1px solid #444444;
+  background-color: transparent;
+  height: 3px;
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 0.3s transform ease-out;
+}
+
+.navigation--inverted .navigation__link::after {
+  border-color: #FFFFFF;
+}
+
+.navigation__link--active::after {
+  transform: scale(1);
+}
+

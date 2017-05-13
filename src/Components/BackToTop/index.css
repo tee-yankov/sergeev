@@ -1,0 +1,34 @@
+.back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  transition: 0.2 ease-out opacity;
+  z-index: 10;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}
+
+.back-to-top a {
+  color: #444444;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.headroom {
+  transition: 0.2s ease-out opacity;
+  opacity: 0;
+}
+
+.headroom--pinned {
+  opacity: 0.5;
+}
+
+.headroom--top {
+  opacity: 0;
+}
+
+.headroom--unpinned {
+  opacity: 0;
+}

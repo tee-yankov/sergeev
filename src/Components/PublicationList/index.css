@@ -1,0 +1,16 @@
+.publication-list {
+  border: 1px solid #EAEAEA;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem
+}
+
+.publication-list__item {
+  border-bottom: 1px solid #EAEAEA;
+  position: relative;
+  padding: 4.2rem;
+}
+
+.publication-list__item:last-child {
+  border: none;
+}
