@@ -14,7 +14,7 @@
   transform: translate(-50%, -100%) rotate(60deg);
   transform-origin: center bottom;
   height: 3.3rem;
-  border: 2px solid #3D3D3D;
+  border-left: 2px solid #3D3D3D;
 }
 
 .clock__minutes {
@@ -24,7 +24,7 @@
   transform: translate(-50%, -100%);
   transform-origin: center bottom;
   height: 2.1rem;
-  border: 1px solid #3D3D3D;
+  border-left: 1px solid #3D3D3D;
 }
 
 .clock__seconds {
@@ -34,7 +34,7 @@
   transform: translate(-50%, -100%) rotate(195deg);
   transform-origin: center bottom;
   height: 2.85rem;
-  border: 1px solid #FF4949;
+  border-left: 1px solid #FF4949;
 }
 
 .clock__label {

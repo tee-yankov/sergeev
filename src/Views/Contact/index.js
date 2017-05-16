@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import AnimatedButton from '../../Components/AnimatedButton'
 import Clock from '../../Components/Clock'
+import Brooklyn from '../../Assets/Map/Brooklyn.jpg'
+import Sofia from '../../Assets/Map/Sofia.jpg'
+import BackgroundImage from '../../Components/BackgroundImage'
 import './index.css'
 
 export default class Contact extends Component {
@@ -81,13 +84,23 @@ export default class Contact extends Component {
             </div>
           </form>
         </div>
-        <div className='row'>
-          <div className='col-sm-6'>
-            <Clock timezone='Europe/Sofia' />
-          </div>
-          <div className='col-sm-6'>
-            <Clock timezone='America/New_York' />
-          </div>
+        <div className='row' style={{ marginBottom: '10rem' }}>
+          <BackgroundImage className='contact__clock' src={Brooklyn}>
+            <div className='contact__oval' />
+            <Clock timezone='America/New_York' style={{ marginBottom: '3rem' }} />
+            <p className='text-bold'>New York</p>
+            <p>67 West St, Brooklyn</p>
+            <p>NY 11222, United States</p>
+            <p>+1 (929) 389-5693</p>
+          </BackgroundImage>
+          <BackgroundImage className='contact__clock' src={Sofia}>
+            <div className='contact__oval' />
+            <Clock timezone='EET' style={{ marginBottom: '3rem' }} />
+            <p className='text-bold'>Sofia +3 EET</p>
+            <p>ul. Shopska Polyana 38,</p>
+            <p>zhk. Geo Milev, Sofia 1000,</p>
+            <p>+359 (0) 889 277 394</p>
+          </BackgroundImage>
         </div>
       </div>
     )

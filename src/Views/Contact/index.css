@@ -39,3 +39,65 @@
 .contact--success {
   color: #00CC00;
 }
+
+.contact__clock {
+  display: inline-block;
+  position: relative;
+  height: 35.5rem;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  width: 50%;
+  background-size: 110%;
+  background-position: 0 -1rem;
+  padding: 3rem 8rem;
+}
+
+.contact__clock h2 {
+  margin: 0;
+}
+
+.contact__clock p {
+  margin: 0;
+}
+
+.contact__oval {
+  height: 38px;
+  width: 38px;
+  background-color: #FF4949;
+  border-radius: 50%;
+  position: absolute;
+  right: 12.5%;
+  bottom: 30%;
+}
+
+.contact__clock:last-child {
+  border-left: none;
+  background-position: -5rem -1rem;
+}
+
+@media (max-width: 1200px) {
+  .contact__clock {
+    width: 100%;
+    max-width: 60rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .contact__clock:last-child {
+    border-left: 1px solid black;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact__clock {
+    background-size: cover;
+    background-position: 0 0;
+    padding: 1rem;
+  }
+
+  .contact__oval {
+    display: none;
+  }
+}

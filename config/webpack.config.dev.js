@@ -174,11 +174,7 @@ module.exports = {
   },
 
   jmLoader: {
-    transforms: {
-      blur: [40],
-      quality: [60],
-      scaleToFit: [600, 600]
-    }
+    transforms: {}
   },
 
   imageWebpackLoader: {

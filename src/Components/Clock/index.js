@@ -33,7 +33,7 @@ export default class Clock extends Component {
     const offset = timeTransforms.offset / 60 > 0 ? '+' + (timeTransforms.offset / 60) : timeTransforms.offset /60
 
     return (
-      <div className='clock__body'>
+      <div style={this.props.style} className='clock__body'>
         <div className='clock__hours' style={timeTransforms.hours} />
         <div className='clock__minutes' style={timeTransforms.minutes} />
         <div className='clock__seconds' style={timeTransforms.seconds} />

@@ -182,3 +182,8 @@ iframe {
 @media (min-width: 48em) and (max-width: 62em) { .hidden-sm { display: none !important; } }
 @media (min-width: 62em) and (max-width: 75em) { .hidden-md { display: none !important; } }
 @media (min-width: 75em)                       { .hidden-lg { display: none !important; } }
+
+.text-bold {
+  font-weight: bold;
+}
+
