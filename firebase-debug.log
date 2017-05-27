@@ -1,0 +1,31 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /home/ted/n/bin/node /home/ted/n/bin/firebase deploy
+[debug] CLI Version:  3.6.1
+[debug] Platform:     linux
+[debug] Node Version: v6.10.0
+[debug] Time:         Mon May 22 2017 10:01:18 GMT+0300 (EEST)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/kI1oBYGdhJ-7V7JaB24m4d-QvmNzMRwnbOhGn9kLaF6kRpJsA8-TSsZaZjlROEWL',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon May 22 2017 10:01:18 GMT+0300 (EEST)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/sergeev-1c10e  
+ Mon May 22 2017 10:01:19 GMT+0300 (EEST)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/sergeev-1c10e/tokens  
+ Mon May 22 2017 10:01:20 GMT+0300 (EEST)
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'sergeev-1c10e'...
+[info] 
+[info] i  deploying database, hosting
+[info] ✔  database: rules ready to deploy.
+[info] i  hosting: preparing build directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/sergeev-1c10e/uploads/-KkixSPVPr4ptyjSqA5u?fileCount=531&message=  
+ Mon May 22 2017 10:01:52 GMT+0300 (EEST)

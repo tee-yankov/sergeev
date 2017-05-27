@@ -13,7 +13,7 @@
   left: 50%;
   transform: translate(-50%, -100%) rotate(60deg);
   transform-origin: center bottom;
-  height: 3.3rem;
+  height: 2.1rem;
   border-left: 2px solid #3D3D3D;
 }
 
@@ -23,7 +23,7 @@
   left: 50%;
   transform: translate(-50%, -100%);
   transform-origin: center bottom;
-  height: 2.1rem;
+  height: 3.3rem;
   border-left: 1px solid #3D3D3D;
 }
 

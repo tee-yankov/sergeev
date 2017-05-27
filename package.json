@@ -65,7 +65,8 @@
     "redux": "^3.6.0",
     "resize-image-loader": "^1.0.2",
     "responsive-loader": "^0.7.0",
-    "scrollmagic": "^2.0.5"
+    "scrollmagic": "^2.0.5",
+    "suncalc": "^1.8.0"
   },
   "scripts": {
     "start": "node scripts/start.js",

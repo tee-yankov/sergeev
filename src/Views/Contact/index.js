@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import AnimatedButton from '../../Components/AnimatedButton'
 import Clock from '../../Components/Clock'
-import Brooklyn from '../../Assets/Map/Brooklyn.jpg'
-import Sofia from '../../Assets/Map/Sofia.jpg'
-import BackgroundImage from '../../Components/BackgroundImage'
+import GoogleMap from '../../Components/GoogleMap'
 import './index.css'
 
 export default class Contact extends Component {
@@ -85,22 +83,42 @@ export default class Contact extends Component {
           </form>
         </div>
         <div className='row' style={{ marginBottom: '10rem' }}>
-          <BackgroundImage className='contact__clock' src={Brooklyn}>
-            <div className='contact__oval' />
-            <Clock timezone='America/New_York' style={{ marginBottom: '3rem' }} />
+          <GoogleMap
+            className='contact__clock'
+            center={{ lat: 40.731786, lng: -73.977425 }}
+            marker={{ lat: 40.7285109, lng: -73.9592147 }}
+            zoom={14}
+          >
+            <Clock
+              timezone='America/New_York'
+              label='UTC -5'
+              style={{ marginBottom: '3rem' }}
+              location={{ lat: 40.7285109, lng: -73.9592147 }}
+            />
             <p className='text-bold'>New York</p>
+            <p>Greenpoint Terminal Warehouse</p>
             <p>67 West St, Brooklyn</p>
             <p>NY 11222, United States</p>
-            <p>+1 (929) 389-5693</p>
-          </BackgroundImage>
-          <BackgroundImage className='contact__clock' src={Sofia}>
-            <div className='contact__oval' />
-            <Clock timezone='EET' style={{ marginBottom: '3rem' }} />
-            <p className='text-bold'>Sofia +3 EET</p>
-            <p>ul. Shopska Polyana 38,</p>
-            <p>zhk. Geo Milev, Sofia 1000,</p>
-            <p>+359 (0) 889 277 394</p>
-          </BackgroundImage>
+            <p>+1-929-239-6646</p>
+          </GoogleMap>
+          <GoogleMap
+            className='contact__clock'
+            center={{ lat: 42.663670, lng: 23.311322 }}
+            marker={{ lat: 42.6621421, lng: 23.3170278 }}
+            zoom={15}
+          >
+            <Clock
+              timezone='Europe/Sofia'
+              label='UTC +3'
+              style={{ marginBottom: '3rem' }}
+              location={{ lat: 42.6621421, lng: 23.3170278 }}
+            />
+            <p className='text-bold'>Sofia</p>
+            <p>Vitosha Business Center</p>
+            <p>47 Cherni vrah Blvd</p>
+            <p>1407, Sofia, Bulgaria</p>
+            <p>+359-888-496020</p>
+          </GoogleMap>
         </div>
       </div>
     )
