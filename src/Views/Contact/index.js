@@ -74,8 +74,8 @@ export default class Contact extends Component {
             </div>
             {errors.map((error, index) => (<p key={index} className='contact--error'>{error}</p>))}
             {success
-            ? <p className='contact--success'>Thank you for your interest! We'll get back to you as soon as we can.</p>
-            : null
+              ? <p className='contact--success'>Thank you for your interest! We'll get back to you as soon as we can.</p>
+              : null
             }
             <div className='col-xs-12 contact__submit-container'>
               <AnimatedButton style={{ padding: '24px' }} disabled={success} type='submit'>Send your message</AnimatedButton>
@@ -99,7 +99,7 @@ export default class Contact extends Component {
             <p>Greenpoint Terminal Warehouse</p>
             <p>67 West St, Brooklyn</p>
             <p>NY 11222, United States</p>
-            <p>+1-929-239-6646</p>
+            <p>+1-929-350-2950</p>
           </GoogleMap>
           <GoogleMap
             className='contact__clock'
