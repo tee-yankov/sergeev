@@ -14,7 +14,12 @@ export default class GoogleMap extends Component {
       lng: PropTypes.number.isRequired
     }).isRequired,
     zoom: PropTypes.number,
-    children: PropTypes.any
+    children: PropTypes.any,
+    onClickMarker: PropTypes.func
+  }
+
+  static defaultProps = {
+    onClickMarker: () => {}
   }
 
   componentDidMount () {
@@ -35,14 +40,7 @@ export default class GoogleMap extends Component {
       center: this.props.center,
       zoom: this.props.zoom || 12,
       styles: mapStyles,
-      disableDefaultUI: true,
-      // zoomControl: false,
-      // scrollwheel: false,
-      // navigationControl: false,
-      // mapTypeControl: false,
-      // scaleControl: false,
-      // draggable: false,
-      // gestureHandling: 'none',
+      disableDefaultUI: true
     })
 
     this.mapMarker = new google.maps.Marker({
@@ -55,19 +53,14 @@ export default class GoogleMap extends Component {
         scale: 10
       }
     })
+
+    this.mapMarker.addListener('click', this.props.onClickMarker)
   }
 
   bindElement = (element) => {
     if (element && !this.mapRoot) {
       this.mapRoot = element
     }
-  }
-
-  removeMapElements () {
-    const gmStyle = [ ...document.querySelectorAll('.gm-style') ]
-    gmStyle.forEach((element) => {
-      console.log(element.children)
-    })
   }
 
   render () {

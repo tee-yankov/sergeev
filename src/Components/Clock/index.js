@@ -21,7 +21,6 @@ export default class Clock extends Component {
   }
 
   getTimeTransforms () {
-    console.log('calc')
     const { timezone, location: { lat, lng } } = this.props
     const now = moment().tz(timezone)
     const template = (angle) => `translate(-50%, -100%) rotate(${angle}deg)`

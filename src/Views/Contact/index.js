@@ -4,6 +4,10 @@ import Clock from '../../Components/Clock'
 import GoogleMap from '../../Components/GoogleMap'
 import './index.css'
 
+const navigateTo = (url) => () => {
+  window.open(url, '_blank')
+}
+
 export default class Contact extends Component {
   state = {
     name: '',
@@ -88,6 +92,7 @@ export default class Contact extends Component {
             center={{ lat: 40.731786, lng: -73.977425 }}
             marker={{ lat: 40.7285109, lng: -73.9592147 }}
             zoom={14}
+            onClickMarker={navigateTo('https://www.google.bg/maps/place/Greenpoint+Terminal+Warehouse/@40.7289769,-73.9593883,20.21z/data=!4m5!3m4!1s0x89c25941d7955495:0x64f342e027966a06!8m2!3d40.7289694!4d-73.9594017?hl=en')}
           >
             <Clock
               timezone='America/New_York'
@@ -106,6 +111,7 @@ export default class Contact extends Component {
             center={{ lat: 42.663670, lng: 23.311322 }}
             marker={{ lat: 42.6621421, lng: 23.3170278 }}
             zoom={15}
+            onClickMarker={navigateTo('https://www.google.bg/maps/place/%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81+%D1%86%D0%B5%D0%BD%D1%82%D1%8A%D1%80+%D0%92%D0%B8%D1%82%D0%BE%D1%88%D0%B0/@42.6606687,23.3082276,13z/data=!4m8!1m2!2m1!1sbusiness+centre+near+Vitosha!3m4!1s0x40aa8459818f9399:0xfa6425a7a37f7d72!8m2!3d42.6620567!4d23.3180188?hl=en')}
           >
             <Clock
               timezone='Europe/Sofia'
